@@ -14,8 +14,9 @@ function whileLoop(number) {
   }
   return "done"
 }
+
 function doWhileLoop(array) {
   do {
-    array.shift
+    array.shift()
   }
 }
