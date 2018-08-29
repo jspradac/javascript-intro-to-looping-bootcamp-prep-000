@@ -14,9 +14,15 @@ function whileLoop(number) {
   }
   return "done"
 }
-
+var i = 0;
+ 
+function incrementVariable() {
+  i = i + 1;
+}
 function doWhileLoop(array) {
   do {
-    array.shift()
-  }
+    array.shift();
+    incrementVariable();
+  } while (array.lenght > 0 && incrementVariable());
+  return array
 }
